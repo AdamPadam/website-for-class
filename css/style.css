@@ -97,21 +97,6 @@ h5 {
     color: #ffbf00;
 }
 
-.clearfix iframe{
-max-width : 854;
-max-height: 480;
-min-width : 215;
-min-height: 120;
-frameborder: 0;
-gesture: media;
-}
-
-.clearfix h2{
-
-front-size: 50%;
-
-}
-
 /* preloader
 ==================================================*/
 
@@ -794,7 +779,47 @@ b i:last-child {
     -webkit-transition: all .3s ease-in-out .3s;
     transition: all .3s ease-in-out .3s;
     opacity: 0;
-    font-size: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.menu-img_item .menu-img_item_hover .item_info-hw {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.menu-img_item .menu-img_item_hover .item_info-hw span {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-transition: all .2s ease-in-out .2s;
+    transition: all .2s ease-in-out .2s;
+    opacity: 0;
+}
+
+.menu-img_item .menu-img_item_hover .item_info-hw em {
+    font-style: normal;
+    display: inline-block;
+    background-color: #ffbf00;
+    padding: 5px 20px;
+    border-radius: 25px;
+    color: #000;
+    margin-top: 10px;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-transition: all .3s ease-in-out .3s;
+    transition: all .3s ease-in-out .3s;
+    opacity: 0;
+    font-size: 15px;
     letter-spacing: 3px;
 }
 
@@ -806,6 +831,13 @@ b i:last-child {
 
 .menu-img_item:hover .item_info em,
 .menu-img_item:hover .item_info span {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.menu-img_item:hover .item_info-hw em,
+.menu-img_item:hover .item_info-hw span {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -1211,6 +1243,7 @@ textarea:focus {
         padding: 5px 1em;
         font-size: 14px;
     }
+    
     .box-primary-nav {
         padding: 80px 0 0;
     }
